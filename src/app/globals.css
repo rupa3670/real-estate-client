@@ -1,11 +1,32 @@
 @import "tailwindcss";
 @import "@heroui/styles"; 
 
+
 @theme {
-  --color-brand-dark: #3b3f48;
-  --color-brand-soft: #f3f4f6;
-  --color-brand-text: #2b2e35;
-  --color-brand-muted: #8b909a;
-  --color-brand-accent: #f4977a;
-  --color-brand-accent-hover: #ee8160;
+  /* Backgrounds: soft ash */
+  --color-ivory: #eceef1;        /* page background */
+  --color-ivory-deep: #e1e4ea;   /* hover / soft areas */
+  --color-brand-soft: #eceef1;
+
+  /* Borders: cool ash */
+  --color-line: #dcdfe6;
+
+  /* Accent: calm indigo (ager coral er jaygay) */
+  --color-coral: #5b66b0;        /* buttons, active icon */
+  --color-coral-dark: #3f4a8f;   /* accent text */
+  --color-coral-soft: #e4e7f6;   /* soft indigo background */
+
+  /* Text: deep slate-indigo, pure black na */
+  --color-brand-dark: #262a42;
+  --color-brand-muted: #7b8095;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-brand-dark);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c9cdd8 transparent;
 }
